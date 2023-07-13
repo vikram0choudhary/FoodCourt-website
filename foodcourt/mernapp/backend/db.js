@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://foodcourt:foodcourt173@cluster0.ypu0kwc.mongodb.net/foodcourtmern?retryWrites=true&w=majority'
+const mongoURI = 'mongodb+srv://username:password@cluster0.ypu0kwc.mongodb.net/foodcourtmern?retryWrites=true&w=majority'
 const mongoDB =async() =>{
     await mongoose.connect(mongoURI,{ useNewUrlParser: true},async(err,result)=>{
     if(err) console.log("---",err)
